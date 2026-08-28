@@ -1,0 +1,42 @@
+/* Project Colony — neutral base styles.
+ * Dark-mode-first, terminal aesthetic. This is the STRUCTURAL shell only —
+ * the design system (tokens, components, spacing) is owned by @designer and
+ * will be layered on top. Keep visual choices here minimal and easy to override.
+ */
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0b;
+  --foreground: #e6e6e6;
+  --muted: #8a8a8a;
+  --accent: #36e27b;
+  --border: #1f1f22;
+  --card: #121214;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
