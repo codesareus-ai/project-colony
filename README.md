@@ -65,3 +65,5 @@ docs/             Architecture + design handoff
 - Server components first; client components only where live updates require it.
 - No real secrets in the repo — `.env.local` is gitignored.
 - No paid dependencies.
+
+<!-- CI smoke: A-001 hello-world PR to prove pipeline + branch protection. -->
